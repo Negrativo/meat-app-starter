@@ -6,6 +6,8 @@ export interface Restaurant {
   deliveryEstimate: String
   rating: number
   imagePath: String
+  about: String
+  hours: String
 
     /*"id": "bread-bakery",
     "name": "Bread & Bakery",
