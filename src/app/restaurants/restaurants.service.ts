@@ -5,6 +5,7 @@ import { Http } from '@angular/http'
 
 import { Restaurant } from './restaurant/restaurant.model';
 import { Observable } from 'rxjs/Observable';
+import { MenuItem } from './restaurant-detail/menu-item/menu-item.model';
 
 import 'rxjs/add/operator/map'
 import 'rxjs/add/operator/catch'
@@ -32,4 +33,9 @@ export class RestaurantService {
       .catch(ErrorHandle.handleError)
   }
 
+  menuOfRestaurant(id: string): Observable<MenuItem[]>{
+    return this.http.get(`${MEAT_API}/restaurants/${id}/menu`)
+      .map(response => response.json())
+      .catch(ErrorHandle.handleError)
+  }
 }
