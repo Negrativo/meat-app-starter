@@ -19,6 +19,7 @@
       "tsconfig": "tsconfig.json",
       "testTsconfig": "tsconfig.spec.json",
       "prefix": "mt",
+      "mobile": false,
       "styles": [
         "../node_modules/font-awesome/css/font-awesome.min.css",
         "../node_modules/admin-lte/bootstrap/css/bootstrap.min.css",
@@ -39,6 +40,8 @@
       }
     }
   ],
+  "addons": [],
+  "packages": [],
   "e2e": {
     "protractor": {
       "config": "./protractor.conf.js"

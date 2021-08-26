@@ -1,9 +1,0 @@
-<div class="form-group" [class.has-success]="iptAddress.valid && (iptAddress.dirty || iptAddress.touched)"
-                        [class.has-error]="!iptAddress.valid && (iptAddress.dirty || iptAddress.touched)" >
-  <label class="control-label sr-only" for="inputSuccess"><i class="fa fa-check"></i> Endereço</label>
-
-  <ng-content></ng-content>
-
-  <span class="help-block" *ngIf="iptAddress.valid && (iptAddress.dirty || iptAddress.touched)"><i class="fa fa-check"></i></span>
-  <span class="help-block" *ngIf="!iptAddress.valid && (iptAddress.dirty || iptAddress.touched)"><i class="fa fa-remove"></i>Campo obrigatorio</span>
-</div>
