@@ -29,4 +29,15 @@ export class ShoppingCartServices {
       .reduce((prev, value) => prev+value, 0)
   }
 
+  increaseQtd(item: CartItem){
+    item.quantity = item.quantity + 1
+  }
+
+  decreaseQtd(item: CartItem){
+    item.quantity = item.quantity - 1
+    if (item.quantity === 0) {
+      this.removeItem(item)
+    }
+  }
+
 }
