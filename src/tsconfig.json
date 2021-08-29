@@ -16,7 +16,8 @@
     "types": [],
     "typeRoots": [
       "../node_modules/@types"
-    ]
+    ],
+    "enableIvy": false
   },
   "exclude": [
     "test.ts",
